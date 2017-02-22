@@ -1,0 +1,85 @@
+/*申请提现 样式*/
+/*********  申请提现    头部   *********/
+.applyTop h3{display: inline-block;}
+.applyTop .myReward{border-bottom: none;}
+.applyTop .myReward:nth-of-type(2) h4{color: #5b4d52;}
+.applyAll{background: url(../img/applyBg.jpg) no-repeat top;background-size: 120% 100%;padding: 30px 0 40px 0;}
+.applyAll h3{font-size: 30px;font-weight: bold;}
+.applyAll h3 i,.applyAll h3 b{font-weight: bold;}
+.applyAll h4{color: #8b9195;font-size: 15px;}
+
+/*********  申请提现    提现金额   *********/
+.cashNum{background: #fff;padding: 20px 15px;margin-bottom: 5px;}
+.cashNum h4{color: #5b4d52;letter-spacing: 2px;font-size: 15px;margin-bottom: 10px;}
+.cashNum h4:before{content: "\e90d";color: #eb6393;font-size: 20px;margin-right: 3px;margin-top: -2px;}
+.cashInput{border-bottom: 1px solid #d4cacd;}
+.cashInput:before{content: "¥";font-size: 20px;color: #a48f97;width: 20px;height: 40px;line-height: 38px;text-align: center;}
+.cashNum input{color: #a48f97;font-size: 16px;padding: 10px 5px;}
+
+.cashPay{background: #fff;padding: 15px;}
+.cashPay span{font-size: 15px;letter-spacing: 2px;}
+.cashPay span:before{content: "\e903";color: #59a3fe;font-size: 20px;margin-top: -2px;margin-right: 5px;}
+.cashPay label{float: right;color: #a48f97;position: relative;padding-right: 20px;}
+.cashPay label:after{content: "";width: 40px;height: 40px;background: url(../img/downarrow.png) no-repeat center;background-size: 46%;position: absolute;right: -16px;top: -10px;}
+
+.wechat{width: 24px;height: 24px;background: url(../img/WeChat.png) no-repeat center;background-size: 100%;float: right;margin-left: 8px;}
+.alipay{width: 24px;height: 24px;background: url(../img/alipay.png) no-repeat center;background-size: 100%;float: right;margin-left: 8px;}
+
+.applyTip{text-align: center;color: #a48f97;line-height: 40px;}
+.applyTip:after{content: "?";border: 1px solid #a48f97;border-radius: 50%;width: 18px;height: 18px;line-height: 16px;text-align: center;font-size: 16px;color: #a48f97;margin-left: 5px;}
+.applyBtn{margin: 0 auto;width: 200px;height: 40px;line-height: 40px;background: #eb6393;color: #fff;border-radius: 5px;font-size: 16px;letter-spacing: 2px;}
+
+/*********  申请提现    提现记录   *********/
+.applyList{background: #fff;margin-top: 30px;padding-bottom: 30px;margin-bottom: 20px;}
+.applyList h2{font-size: 16px;border-left: 5px solid #59a3fe;padding: 10px;font-weight: bold;letter-spacing: 2px;}
+.applyList ul{margin: 20px 15px 0 15px;border-left: 1px dashed #ddd7da;}
+.applyList ul li{padding-left: 15px;position: relative;color: #a48f97;margin-bottom: 10px;}
+.applyList ul li:before{content: "";width: 8px;height: 8px;background: #fde8f1;border-radius: 50%;border:1px dashed #ddd7da;position: absolute;left: -5px;top: 0px;}
+.applyList ul li p{line-height: 26px;}
+.applyList ul li p label{text-align: right;}
+.applyList ul li p:nth-of-type(1) span
+,.applyList ul li p:nth-of-type(2) label{color: #5b4d52;font-size: 16px;}
+
+/*********  申请提现    公共下弹层   *********/
+.popBg{width: 100%;height: 100%;position:fixed;z-index: 2;background: rgba(0,0,0,.6); top: 0px;left: 0px;}
+.downPop{width: 100%;height: auto;position: fixed;z-index: 4;bottom: -100%;left: 0px;background: #fff;padding: 20px 20px 30px 20px;}
+.closedPop{width: 40px;height: 40px;background: url(../img/downarrow.png) no-repeat center;background-size: 50%;position: absolute;top: 0px;right: 0px;}
+
+.tipPop,.payPop{color: #a48f97;}
+.tipPop h4{text-align: center;font-size: 16px;margin-bottom: 20px;}
+.tipPop p{margin-bottom: 10px;}
+
+.payPop{padding: 20px 0 80px 0;}
+.payPop .alipay,.payPop .wechat{float: left;margin-right: 10px;}
+.payPop p{padding: 10px 0;font-size: 16px;position: relative;}
+.payPop p.cur{background: #f9f9f9;}
+.payPop p.cur:after{content: "";position: absolute;right: 10px;top: 12px;width: 20px;height: 20px;background: url(../img/gou.png) no-repeat center;background-size: 100%;}
+
+/*三星galaxy*/
+@media screen and (min-width:360px){
+	.applyAll{padding: 40px 0 50px 0;}
+	.downPop{padding: 30px 30px 40px 30px;}
+	.tipPop h4{margin-bottom: 25px;}
+	.tipPop p{margin-bottom: 15px;}
+	.payPop{padding-bottom: 100px;}
+}
+/*iPhone 6*/
+@media screen and (min-width:375px){
+		
+}
+/*iPhone 6 Plus*/
+@media screen and (min-width:414px){
+	.applyAll{padding: 45px 0 55px 0;}
+	.applyTip{font-size: 15px;}
+	.applyBtn{width: 240px;height: 46px;line-height: 46px;font-size: 18px;}
+	.applyList ul{margin: 25px 20px 0 20px;}
+	.applyList ul li{margin-bottom: 15px;}
+	.payPop{padding-bottom: 120px;}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+/*确认订单样式*/
+.orderPay i{font-size: 12px;}
+
+/*********  确认订单      订单详情   *********/
+.orderDetail{background: #fff;padding: 15px 10px;margin-bottom: 10px;}
+.orderDetail h2{color: #a48f97;border-bottom: 1px solid #eee;padding-bottom: 5px;}
+.orderDetail dl{padding: 10px 0;border-bottom: 1px solid #eee;}
+.orderDetail dl dt{width: 65px;height: 65px;border-radius: 50%;overflow: hidden;border: 2px solid #eee;margin-right: 10px;}
+.orderDetail dl dt img{width: 100%;height: 100%;}
+.orderDetail dl dd h3{font-size: 16px;height: 20px;overflow: hidden;}
+.orderDetail dl dd h4{color: #a48f97;text-decoration: line-through;margin: 5px 0 3px 0;}
+.orderDetail dl dd h5 label{color: #a48f97;}
+.orderDetail p{padding: 6px 0;}
+.orderDetail p:not(:last-of-type){border-bottom: 1px solid #eee;}
+.orderDetail p cite{width: 20px;height: 20px;line-height:18px;border: 1px solid #eee;text-align: center;font-size: 16px;}
+.orderDetail p cite.jian{margin-right: 8px;}
+.orderDetail p cite.jia{margin-left: 8px;}
+.orderDetail p cite.hidden{color: #eee;}
+
+/*********  确认订单      支付方式   *********/
+.payWay{background: #fff;padding:10px;margin-bottom: 30px;}
+.payWay h3{font-size: 16px;border-bottom: 1px solid #eee;padding-bottom: 5px;}
+.payWay a{display: block;}
+.payWay a:before{background: url(../img/daipay.png) no-repeat center;background-size: 100%;}
+.payWay a:after{content: "\e913";font-size: 16px;position: absolute;top: 10px;right: 4px;}
+.payWay a,.payWay p{padding: 8px 0;position: relative;}
+.payWay a:before,.payWay p:before{content: "";width: 24px;height: 24px;margin-top: -6px;margin-right: 5px;}
+.payWay a,.payWay p:not(:last-of-type){border-bottom: 1px solid #eee;}
+.payWay .wechat:before{background: url(../img/WeChat.png) no-repeat center;background-size: 100%;}
+.payWay .alipay:before{background: url(../img/alipay.png) no-repeat center;background-size: 100%;}
+.payWay p:after{content: "";position: absolute;top: 8px;right: 4px;width: 20px;height: 20px;border: 1px solid #eee;border-radius: 50%;}
+.payWay p.cur:after{content: "";background:#e56190 url(../img/whitegou.png) no-repeat center;background-size: 80%;}
+
+
+/*三星galaxy*/
+@media screen and (min-width:360px){
+	.orderDetail h2{padding-bottom: 10px;}
+	.orderDetail dl{padding: 15px 0;}
+	.orderDetail dl dt{width: 70px;height: 70px;}
+	.orderDetail dl dd h4{margin: 8px 0 5px 0;}
+	.orderDetail p{padding: 10px 0;}
+	.payWay h3{padding-bottom: 10px;}
+	.payWay a,.payWay p{padding: 12px 0;}
+	.payWay p:after{top: 10px;}
+	.memberTop{height: 60px;line-height: 60px;}
+	.codePop{width: 280px;height: 400px;margin-top: -200px;margin-left: -140px;}
+	.codePop img{width: 200px;height: 200px;margin-bottom: 15px;}
+}
+/*iPhone 6*/
+@media screen and (min-width:375px){
+	.orderDetail dl dt{width: 75px;height: 75px;}
+	.orderDetail dl dd h4{margin: 10px 0 8px 0;}
+	
+}
+/*iPhone 6 Plus*/
+@media screen and (min-width:414px){
+	.orderDetail dl dt{width: 80px;height: 80px;}
+	.orderDetail dl dd h4{margin: 12px 0 10px 0;}
+}
+
+
+
+
+
+
+

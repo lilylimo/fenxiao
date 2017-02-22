@@ -1,0 +1,80 @@
+/*会员说明页面样式*/
+.mbep i{font-size: 12px;}
+.level:before{content: "\e90e";font-size: 16px;margin-top: -8px;}
+/*********  会员说明   头部      *********/
+.mbepTop{width: 100%;background: url(../img/mbepBg.jpg) no-repeat center;background-size: cover;padding: 20px 0;}
+.mbepTop>h3{background: rgba(255,255,255,.6);color: #b3526f;border-radius: 20px;height: 40px;line-height: 40px;position: relative;padding-left: 140px;margin-top: 10px;margin-left: -60px;width: 95%;}
+.mbepTop>h3 img{width: 50px;height: 50px;border-radius: 50%;border: 1px solid #fff;position: absolute;bottom: 3px;left: 80px;z-index: 2;}
+
+/*********  会员说明   头部总收益      *********/
+.mbepBox{margin: 15px 0;}
+.mbepBox .zsyBox{width: 120px;height: 120px;border: 2px solid #fef4c4;border-radius: 50%;text-align: center;padding-top: 20px;color: #fff;}
+.mbepBox .zsyBox:before{content: "";display: block;width: 30px;height: 30px;background: url(../img/zsyIcon.png) no-repeat center;background-size: cover;margin: 0 auto;}
+.mbepBox .zsyBox h1{font-size: 20px;font-weight: bold;}
+.mbepBox .zsyBox p{font-size: 12px;}
+.mbepBox .smbox h4{width: 60px;height: 60px;background: #ffb6d4;border-radius: 50%;text-align: center;padding-top: 10px;color: #fff;margin: 0 auto;margin-top: 25px;}
+.mbepBox .smbox h4 span,.mbepBox .smbox h4 label{display: block;}
+.mbepBox .smbox h4 span{font-weight: bold;}
+.mbepBox .smbox h4 label{font-size: 12px;}
+.mbepBox .smbox h4 span.level:before{color: #fff;}
+
+/*********  会员说明   头部滑动      *********/
+.timeSlide:before{content: "";width: 100%;height: 3px;background: -webkit-linear-gradient(to right,#b3526f,white);background: -o-linear-gradient(to right,#b3526f,white);background: -moz-linear-gradient(to right,#b3526f,white);background: linear-gradient(to right,#b3526f,white);position: absolute;top: 36%;left: 0;z-index: -1;}
+.timeSlide .timeBox{background:url(../img/graycircle.png) no-repeat center;background-size:80%;text-align: center;color: #fff;border-radius: 50%;padding-top: 18px;}
+.timeSlide .timeBox h2{font-size: 18px;font-weight: bold;}
+.timeSlide .timeBox h2:before{color: #fff;font-size: 20px;}
+.timeSlide p{display: none;}
+
+.timeSlide .swiper-slide-active .timeBox{padding-top: 18px;background-size:100%;}
+
+.timeSlide .swiper-slide-active .timeBox h2{font-weight:bold;line-height: 26px;}
+.timeSlide .swiper-slide-active p{color: #fff;width: 300px;margin-left: -114px;display: block;text-align: center;margin-top: 10px;}
+.timeSlide .swiper-slide-active p b{color: #fef4c4;}
+
+.timeSlide .mylevel h2{display: none;}
+.timeSlide .mylevel,.timeSlide .swiper-slide-active .mylevel{background: url(../img/user1.jpg) no-repeat center;background-size: cover;border: 2px solid #b3526f;}
+
+.timeSlide .timeBoxpbg{background:url(../img/redcircle.png) no-repeat center;background-size:80%;}
+
+/*********  会员说明   会员规则      *********/
+.mbrule{margin: 20px 0;}
+.mbrule>h2{background: url(../img/hygzBg.png) no-repeat center;background-size: auto 100%;text-align: center;color: #fef4c4;font-size: 18px;height: 90px;line-height: 147px;font-weight: bold;letter-spacing: 1px;margin-bottom: 15px;}
+
+.mbrbox{background: #fff;padding: 10px 0;margin-bottom: 10px;}
+.mbrbox h3{font-weight: bold;font-size: 15px;padding: 5px 10px 5px 15px;border-bottom:  1px dashed #fde8f1;}
+.mbrbox h3 b{font-size: 18px;font-weight: bold;}
+.mbrbox h3:before{content: "";width: 16px;height: 16px;border-radius: 50%;background: #fbcee2;margin-top: -6px;margin-right:10px;}
+.mbrbox p{color: #763d24;margin: 10px;height: 18px;overflow: hidden;}
+
+.highlevel h3{color: #b3526f;}
+.highlevel h3:before{background: #b3526f;}
+
+
+/*三星galaxy*/
+@media screen and (min-width:360px){
+	.mbepTop>h3{width: 90%;}
+	.mbepBox{margin: 20px 0;}
+	.mbepBox .zsyBox{width: 140px;height: 140px;padding-top: 28px;}
+	.mbepBox .zsyBox h1{font-size: 24px;}
+	.mbepBox .smbox h4{width: 70px;height: 70px;margin-top: 35px;padding-top: 15px;}
+	.timeSlide .timeBox,.timeSlide .swiper-slide-active .timeBox{padding-top: 20px;}
+}
+/*iPhone 6*/
+@media screen and (min-width:375px){
+		
+}
+/*iPhone 6 Plus*/
+@media screen and (min-width:414px){
+	.mbepTop>h3{width:85%;}
+	.mbepBox .zsyBox{width: 160px;height: 160px;padding-top: 35px;}
+	.mbepBox .zsyBox h1{font-size: 28px;}
+	.mbepBox .smbox h4{margin-top: 45px;}
+	.timeSlide .timeBox,.timeSlide .swiper-slide-active .timeBox{padding-top: 26px;}
+}
+
+
+
+
+
+
+

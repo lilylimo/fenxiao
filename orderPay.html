@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>确认订单</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/orderPay.css" />
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+</head>
+<body>
+<!--  确认订单    主体页面    -->
+<section class="mui-content mui-scroll-wrapper scrollY scrollBt50 orderPay">
+	<div class="mui-scroll" >
+		<!--  确认订单    头部代言人信息    -->
+		<div class="displayBox memberTop">
+			<span class="boxflex"><cite class="red">1</cite>Arisliw1990小叮咚</span>
+			<label class="boxflex">15974447214</label>
+		</div>
+		<!--  确认订单    订单详情    -->
+		<div class="orderDetail">
+			<h2>订单号：4782564600696366</h2>
+			<dl class="displayBox">
+				<dt>
+					<img src="img/mall1.jpg" />
+				</dt>
+				<dd class="boxflex">
+					<h3>288元优惠代金券288元优惠代</h3>
+					<h4><i>￥</i>179.00</h4>
+					<h5 class="displayBox">
+						<span class="boxflex red"><i>￥</i>191</span>
+						<label class="boxflex txtright">x<b id="topNum">2</b></label>
+					</h5>
+				</dd>
+			</dl>
+			<p class="displayBox">
+				<label class="boxflex">购买数量</label>
+				<span id="prdNum" class="boxflex txtright"><cite class="jian">-</cite><b>2</b><cite class="jia">+</cite></span>
+			</p>
+			<p class="displayBox blue">
+				<label class="boxflex">服务时间</label>
+				<span class="boxflex txtright">请在2016年10月23日期间完成服务</span>
+			</p>
+			<p>
+				合计：<span class="red"><i>￥</i>199.85</span>
+			</p>
+		</div>
+		<!--  确认订单    支付方式    -->
+		<div class="payWay">
+			<h3>支付方式</h3>
+			<a id="openCode" href="javascript:;">亲密代付</a>
+			<p class="wechat cur">微信支付</p>
+			<p class="alipay">支付宝</p>
+		</div>
+		
+	</div>		
+</section>
+	
+<!--  底部  立即购买    -->
+<div class="displayBox buyfootBar">
+	<label class="boxflex">实付：<cite class="red"><i>￥</i>199.85</cite></label>
+	<span>提交订单</span>
+</div>
+
+<!--  弹层   待支付    -->
+<div id="codePop" class="codePop">
+	<h3>亲密付二维码</h3>
+	<h4 class="red">据说有一种爱，叫我消费你买单</h4>
+	<img src="img/code1.jpg" />
+	<h5>识别二维码确认支付</h5>
+</div>
+<!--  公共弹层背景    -->
+<div class="centerBg hide"></div>
+	
+
+<script type="text/javascript" src="js/public.js" ></script>
+<script type="text/javascript" src="js/orderPay.js" ></script>
+	
+</body>
+</html>

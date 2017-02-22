@@ -1,0 +1,94 @@
+/*用户中心样式*/
+.userSection h3{display: inline-block;}
+/*********  用户中心头部   *********/
+.anitOut{width: 100%;height: 200px;position: relative;}
+.userTop{text-align: center;position: absolute;top: 0;left: 0;width: 100%;height: 100%;color: #fff;border-bottom: 1px solid #f8f8f8;}
+.userImg{width: 100px;height: 100px;margin: 0 auto;margin-top: 10%;border-radius: 50%;overflow: hidden;border: 3px solid rgba(252,218,232,.6);-moz-box-shadow: 3px 3px 2px #ea98b5;box-shadow: 3px 3px 2px #ea98b5;position: relative;}
+.userImg img{width: 100%;height: 100%;}
+.userImg .level{position: absolute;bottom: 0;right: 0;z-index: 2;background: #fff;border-radius: 50%;border: 2px solid #fde8f1;width: 36px;height: 36px;line-height: 38px;font-weight: bold;}
+.userImg .level:before{content: "\e90e";color: #eb6393;font-size: 16px;margin-top: -8px;}
+.userTop h2{font-size: 16px;font-weight: bold;margin: 10px 0 5px 0;height: 20px;overflow: hidden;}
+.userTop h3{font-size: 12px;color: #ffe3ee;height: 14px;overflow: hidden;}
+
+/*********  用户中心  奖励消费提现   *********/
+.moneyBox{background: #fff;margin-bottom: 10px;text-align: center;padding: 0 20px;}
+.moneyBox h3 i{font-size: 12px;}
+.moneyBox h3{position: relative;}
+.moneyBox b,.myMoney b{font-size: 12px;position: absolute;top: 1px;right: -14px;}
+.myMoneyBox b{top: -2px;}
+.myReward{padding: 15px 0;border-bottom: 1px dashed #fde8f1;}
+.myReward h3{font-size: 20px;}
+.myReward h3 i{font-size: 14px;}
+.myReward h4{color: #b62558;}
+
+.myConsume,.myCash{padding: 15px 0;}
+.myConsume h3,.myCash h3{font-size: 16px;}
+.myConsume h4,.myCash h4{color: #a48f97;}
+
+
+/*********  用户中心  按钮导航   *********/
+.btnBar{background: #fff;padding: 20px 0;text-align: center;margin-bottom: 10px;}
+.btnBar a{color: #a48f97;}
+
+.btnBar a:before{display: block;font-size: 38px;margin-bottom: 10px;}
+.btnBar .fxddIcon:before{content: "\e900";color: #eb6393;}
+.btnBar .tgewmIcon:before{content: "\e904";color: #b063eb;}
+.btnBar .sqtxIcon:before{content: "\e903";color: #63b0eb;}
+
+/*********  用户中心  我的代言人   *********/
+.myAgent{padding: 0 10px;margin-bottom: 10px;}
+.myAgent h3{font-size: 15px;}
+.myAgent h3 label{text-align: left;color: #5b4d52;}
+.myAgent h3 span{text-align: right;color: #a48f97;}
+
+.agentSlide{width: 100%;height: 140px;margin-top: 10px;}
+.agentSlideBox{margin-right: 10px;width: 220px;background: #fff;border-radius: 4px;position: relative;height: 140px;}
+.agentSlideBox h4{text-align: center;color: #eb6393;line-height: 40px;}
+.agentSlideImg{text-align: center;}
+.agentSlideImg img{width: 60px;height: 60px;border-radius: 50%;border: 2px solid #f1f0ef;margin-right: -10px;}
+.agentSlideBox a{text-align: right;color: #a48f97;width: 94%;display: block;font-size: 12px;position:absolute ;bottom: 10px;right: 6%;}
+
+.agentOne{margin-top: 10px;width: 100%;height: 180px;}
+.agentOne .agentSlideImg{margin-top: 15px;}
+.agentOne .agentSlideImg img{width: 70px;height: 70px;}
+
+.agentSlide .novalue{height: 100%;padding-top: 0px;}
+.agentSlide .novalue:before{ height: 50px; background-size: 20%;}
+.agentSlide .minNovalue{line-height:28px;font-size:14px; color:#f8b3cf; }
+
+/*********  用户中心  我的财富   *********/
+.myMoney{position: relative;margin-bottom: 10px;}
+.myMoney h3{margin-bottom: 10px;}
+.myMoney h3 span{padding-right: 10px;}
+
+.myMoneyBox{background: #fff;border-radius: 4px;text-align: center;border-bottom: 1px solid #fef6f9;}
+.myMoneyBox>div{margin: 20px 0;}
+.myMoneyBox>div h3{font-size: 16px;position: relative;line-height: 30px;}
+.myMoneyBox>div h3 i{font-size: 12px;}
+.myMoneyBox>div h4{color: #a48f97;}
+
+.noOrder{border-right: 1px solid #fef6f9;}
+
+
+/*三星galaxy*/
+@media screen and (min-width:360px){
+	.anitOut{height: 210px;}
+}
+/*iPhone 6*/
+@media screen and (min-width:375px){
+		
+}
+/*iPhone 6 Plus*/
+@media screen and (min-width:414px){
+	.anitOut{height: 220px;}
+	.agentOne{height: 200px;}
+	.agentOne .agentSlideImg{margin-top: 20px;}
+	.agentOne .agentSlideImg img{width: 80px;height: 80px;}
+}
+
+
+
+
+
+
+

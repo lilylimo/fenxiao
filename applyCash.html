@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>申请提现-代言人</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/userCenter.css" />
+    <link rel="stylesheet" href="css/applyCash.css" />
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+</head>
+<body>
+<!--  申请提现 主体页面    -->
+<section class="mui-content mui-scroll-wrapper scrollY scrollBt50">
+	<div class="mui-scroll"  id="dataScroll">
+		<!--  申请提现 头部    -->
+		<div class="moneyBox applyTop">
+			<div class="myReward applyAll">
+				<h3 class="blue"><i>￥</i>99999.9<b>万</b></h3>
+				<h4>总金额(元)</h4>
+			</div>
+			<div class="myReward">
+				<h3 class="red"><i>￥</i>9999.50<b>万</b></h3>
+				<h4>可提现</h4>
+			</div>
+			<div class="displayBox">
+				<div class="myConsume boxflex">
+					<h3 class="orange"><i>￥</i>9999.5<b>万</b></h3>
+					<h4>结算中</h4>
+				</div>
+				<div class="myCash boxflex">
+					<h3 class="blue"><i>￥</i>9999.5<b>万</b></h3>
+					<h4>已提现</h4>
+				</div>
+			</div>
+		</div>
+		<!--  申请提现 提现金额    -->
+		<div class="cashNum">
+			<h4>提现金额</h4>
+			<div class="cashInput displayBox">
+				<input type="number" value="500" class="boxflex" />
+			</div>
+		</div>
+		<!--  申请提现 提现到账    -->
+		<div class="cashPay">
+			<span class="blue">提现到账</span>
+			<label id="openWay">微信红包<b class="wechat"></b></label>
+		</div>
+		<p class="applyTip" id="explain">每自然月可提现2次</p>
+		<button class="applyBtn">确认提现</button>
+		<!--  申请提现 提现记录    -->
+		<div class="applyList">
+			<h2 class="blue">提现记录</h2>
+			<ul>
+				<li>
+					<p class="displayBox">
+						<span class="boxflex">余额--转出</span>
+						<label class="boxflex">2016-12-16</label>
+					</p>
+					<p class="displayBox">
+						<span class="boxflex">余额：9999999.08</span>
+						<label class="boxflex">-50</label>
+					</p>
+				</li>
+				<li>
+					<p class="displayBox">
+						<span class="boxflex">余额--转出</span>
+						<label class="boxflex">2016-12-16</label>
+					</p>
+					<p class="displayBox">
+						<span class="boxflex">余额：9999999.08</span>
+						<label class="boxflex">-50</label>
+					</p>
+				</li>
+				<li>
+					<p class="displayBox">
+						<span class="boxflex">余额--转出</span>
+						<label class="boxflex">2016-12-16</label>
+					</p>
+					<p class="displayBox">
+						<span class="boxflex">余额：9999999.08</span>
+						<label class="boxflex">-50</label>
+					</p>
+				</li>
+				
+				
+			</ul>
+			<!-- 上拉加载提示    开始-->
+			<div class="loadmore"><span class="loading"></span><span class="loadTip">上拉显示更多</span></div>
+			 <!-- 上拉加载提示     结束-->
+			
+		</div>
+		
+		
+	</div>		
+</section>
+	
+<!--  公共底部导航    -->
+<footer class="displayBox">
+	<a href="mall.html" class="boxflex hxgIcon">好享购</a>
+	<a href="userCenter.html">
+		<div class="footImg">
+			<img src="img/user1.jpg" />
+		</div>
+	</a>
+	<a href="order.html" class="boxflex fxddfIcon">分销订单</a>
+</footer>
+
+<!--  弹层   提现说明    -->
+<div id="applyTip" class="downPop">
+	<span class="closedPop"></span>
+	<div class="tipPop">
+		<h4>提现说明</h4>
+		<p>每自然月可提现2次每自然月可提现2次每自然月可提现2次每</p>
+		<p>每自然月可提现2次每自然月可提现2次每自然月可提现2次</p>
+		<p>每自然月可提现2次每自然月可提现2次每自然月可提现2</p>
+		<p>提现2次每自然月可提现2次每自然月可提现2次</p>
+		<p>每自然月可提现2次每自然月可提现2次每自然月可提现2次</p>
+		<p>每自然月可提现2次每自然月可提现2次</p>
+	</div>
+</div>
+
+<!--  弹层   支付方式    -->
+<div id="applyWay" class="downPop">
+	<span class="closedPop"></span>
+	<div class="payPop">
+		<p class="cur"><span><b class="wechat"></b>微信红包</span></p>
+		<p><span><b class="alipay"></b>支付宝</span></p>
+	</div>
+</div>
+<!--  公共弹层背景    -->
+<div class="popBg hide"></div>
+
+
+<script type="text/javascript" src="js/public.js" ></script>
+<script type="text/javascript" src="js/applyCash.js" ></script>
+	
+</body>
+</html>

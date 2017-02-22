@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>订单详情</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/order.css" />
+    <link rel="stylesheet" href="css/productDetails.css" />
+    <link rel="stylesheet" href="css/orderDetails.css" />
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+</head>
+<body>
+<!--  订单详情 主体页面    -->
+<section class="mui-content mui-scroll-wrapper scrollY scrollBt50">
+	<div class="mui-scroll" >
+		<!--  订单详情   已服务头部状态    -->
+		<div class="odlTop yfwTop">
+			<h3>已服务</h3>
+			<p>感谢使用您在涣美，体验变美感觉是不是开心呀~</p>
+		</div>
+		<!--  订单详情  已付款头部状态    -->
+		<div class="odlTop yfkTop">
+			<h3>已付款</h3>
+			<p>感谢您在涣美，赶快去门店体验变美吧~</p>
+		</div>
+		<!--  订单详情    头部代言人信息    -->
+		<div class="displayBox memberTop">
+			<span class="boxflex"><cite class="red">1</cite>Arisliw1990小叮咚</span>
+			<label class="boxflex">15974447214</label>
+		</div>
+		<!--  订单详情    订单信息    -->
+		<div class="orderBox">
+			<h3 class="displayBox">
+				<span class="boxflex">订单号：<i>4782564600696366</i></span>
+			</h3>
+			<dl class="displayBox">
+				<dt>
+					<img src="img/mall1.jpg" />
+				</dt>
+				<dd class="boxflex">
+					<div class="displayBox">
+						<h3>288元优惠代金券288元优惠代288元优惠代金券288元优惠代</h3>
+						<p class="boxflex">
+							<span class="txtright"><i>￥</i>79</span>
+							<label class="txtright"><i>￥</i>179</label>
+						</p>
+					</div>
+					<h5 class="displayBox">
+						<span class="boxflex red">总收益：<i>￥</i>79.00</span>
+						<label class="boxflex txtright">x1</label>
+					</h5>
+				</dd>
+			</dl>
+		</div>
+		<!--  订单详情    会员收益    -->
+		<div class="odlmember">
+			<h3 class="displayBox">
+				<span class="boxflex">会员收益</span>
+				<label class="boxflex red txtright"><i>￥</i>1999.00</label>
+			</h3>
+			<p>
+				<span>支付时间：</span>
+				<label>2016-10-26</label>
+			</p>
+			<p>
+				<span>购买数量：</span>
+				<label>x 5</label>
+			</p>
+			<p>
+				<span>支付金额：</span>
+				<label><i>￥</i>19999</label>
+			</p>
+			<p>
+				<span>实付金额：</span>
+				<label class="red"><i>￥</i>1999.00（来自微信支付）</label>
+			</p>
+		</div>
+		<!--  订单详情    服务门店        已服务状态显示    -->
+		<div class="storeBox yfw mgbt10">
+			<h3>服务门店</h3>
+			<div class="storeList">
+				<dl class="displayBox">
+					<dt>
+						<img src="img/mall1.jpg" />
+					</dt>
+					<dd class="boxflex">
+						<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+						<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						<h5 class="mobile">15974447214</h5>
+						<h5 class="clock">8:00-22:00</h5>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<!--  订单详情    支持服务门店        已付款状态显示    -->
+		<div class="storeBox yfk">
+			<h3>支持服务门店</h3>
+			<div class="storeList">
+				<dl class="displayBox">
+					<dt>
+						<img src="img/mall1.jpg" />
+					</dt>
+					<dd class="boxflex">
+						<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+						<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+					</dd>
+				</dl>
+				<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+				<span class="gothere">去这里</span>
+			</div>
+			<div class="storeList">
+				<dl class="displayBox">
+					<dt>
+						<img src="img/mall1.jpg" />
+					</dt>
+					<dd class="boxflex">
+						<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+						<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+					</dd>
+				</dl>
+				<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+				<span class="gothere">去这里</span>
+			</div>
+			
+		</div>
+		<button id="openStore" class="showLights"></button>
+		<!--  订单详情    服务时间        已服务状态显示    -->
+		<div class="odltime">
+			<span>服务时间：</span>
+			<label>2016-10-26   08：90</label>
+		</div>
+		<!--  订单详情    服务时间        已付款状态显示    -->
+		<div class="odltime">
+			<span>服务时间：</span>
+			<label class="yfk">请在2016年10月23日期间完成服务</label>
+		</div>
+		
+		
+	</div>		
+</section>
+	
+<!--   已服务  订单详情    底部    -->
+<!--<div class="displayBox buyfootBar yfwfoot">
+	<label class="boxflex">总收益：<cite class="red"><i>￥</i>1999.00</cite></label>
+	<span id="buyAgain">再来一单</span>
+</div>-->
+
+<!--   已付款  订单详情    底部    -->
+<div class="displayBox buyfootBar yfkfoot">
+	<label class="boxflex">总收益：<cite class="red"><i>￥</i>1999.00</cite></label>
+	<span id="useNow">立即使用</span>
+</div>
+
+
+
+<!--  弹层   可选门店列表    -->
+<div id="storePop" class="rightPop">
+	<div class="storeBox">
+		<h3>服务支持门店</h3>
+		<div class="mui-content mui-scroll-wrapper scrollY scrollTp66">
+			<div class="mui-scroll" id="dataScroll">
+				<div class="storeList">
+					<dl class="displayBox">
+						<dt>
+							<img src="img/mall1.jpg" />
+						</dt>
+						<dd class="boxflex">
+							<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+							<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						</dd>
+					</dl>
+					<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+					<span class="gothere">去这里</span>
+				</div>
+				<div class="storeList">
+					<dl class="displayBox">
+						<dt>
+							<img src="img/mall1.jpg" />
+						</dt>
+						<dd class="boxflex">
+							<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+							<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						</dd>
+					</dl>
+					<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+					<span class="gothere">去这里</span>
+				</div>
+				<div class="storeList">
+					<dl class="displayBox">
+						<dt>
+							<img src="img/mall1.jpg" />
+						</dt>
+						<dd class="boxflex">
+							<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+							<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						</dd>
+					</dl>
+					<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+					<span class="gothere">去这里</span>
+				</div>
+				<div class="storeList">
+					<dl class="displayBox">
+						<dt>
+							<img src="img/mall1.jpg" />
+						</dt>
+						<dd class="boxflex">
+							<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+							<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						</dd>
+					</dl>
+					<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+					<span class="gothere">去这里</span>
+				</div>
+				<div class="storeList">
+					<dl class="displayBox">
+						<dt>
+							<img src="img/mall1.jpg" />
+						</dt>
+						<dd class="boxflex">
+							<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+							<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						</dd>
+					</dl>
+					<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+					<span class="gothere">去这里</span>
+				</div>
+				<!-- 上拉加载提示    开始-->
+				<div class="loadmore"><span class="loading"></span><span class="loadTip">上拉显示更多</span></div>
+				 <!-- 上拉加载提示     结束-->
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<!--  公共弹层背景    -->
+<div class="rightpopBg hide"></div>
+
+
+<!--  弹层   待支付    -->
+<div id="codePop" class="codePop usePop">
+	<img src="img/code1.jpg" />
+	<h5>到店扫描二维码确认</h5>
+</div>
+<!--  公共弹层背景    -->
+<div class="centerBg hide"></div>
+
+	
+
+<script type="text/javascript" src="js/public.js" ></script>
+<script type="text/javascript" src="js/orderDetails.js" ></script>
+	
+</body>
+</html>

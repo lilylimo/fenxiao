@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>服务详情</title>
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/productDetails.css" />
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+	<script type="text/javascript" src="js/swiper-3.4.0.min.js" ></script>
+</head>
+<body>
+<!--  服务详情 主体页面    -->
+<section class="mui-content mui-scroll-wrapper scrollY scrollBt50 prdetail">
+	<div class="mui-scroll" >
+		<!--  服务详情   头部轮播    -->
+		<div class="swiper-container prdSlide">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<img src="img/mall1.jpg" />
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="img/mall1.jpg" />
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="img/mall1.jpg" />
+		        </div>
+		    </div>
+		    <!-- 分页器 -->
+		    <div class="swiper-pagination"></div>
+		</div>
+		<!--  服务详情   标题栏    -->
+		<div class="titleBar">
+			<h2>标题名称华窈整形整形标题名称标题名称华窈整形整形标题名称</h2>
+			<h3 class="displayBox">
+				<span class="boxflex red"><i>￥</i>199.85</span>
+				<label class="boxflex">已售：19999</label>
+			</h3>
+			<h4> 原价：<i>￥</i>19999</h4>
+		</div>
+		<!--  服务详情   会员收益    -->
+		<div class="memberProfit">
+			<h3 class="displayBox">
+				<span class="boxflex">会员收益</span>
+				<label class="boxflex red"><i>￥</i>1999.00</label>
+			</h3>
+			<dl>
+				<dt>会员等级收益</dt>
+				<a href="memberExplain.html">
+				<dd class="displayBox">
+					<label class="boxflex">Lv5：<span class="red"><i>￥</i>99.00</span></label>
+					<label class="boxflex">Lv6：<span class="red"><i>￥</i>99.00</span></label>
+					<label class="boxflex">Lv7：<span class="red"><i>￥</i>99.00</span></label>
+				</dd>
+				</a>
+			</dl>
+		</div>
+		<!--  服务详情   商品亮点    -->
+		<div class="prdLight">
+			<h4>商品亮点</h4>
+			<h5>标题名称华窈整形整形标题名称标题名称华窈整形整形标题</h5>
+			<h5>标题名称华窈整形整形标题名称标题名称华窈整形整形标题</h5>
+		</div>
+		<!--  服务详情   商家自己上传图片内容    -->
+		<div class="uploadBox hide">
+			商家自己上传图片内容
+		</div>
+		<button id="openLights" class="showLights"></button>
+		<!--  服务详情   可选服务门店    -->
+		<div class="storeBox">
+			<h3>可选服务门店</h3>
+			<div class="storeList">
+				<dl class="displayBox">
+					<dt>
+						<img src="img/mall1.jpg" />
+					</dt>
+					<dd class="boxflex">
+						<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+						<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						<h5 class="mobile">15974447214</h5>
+						<h5 class="clock">8:00-22:00</h5>
+					</dd>
+				</dl>
+				<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+				<span class="gothere">去这里</span>
+			</div>
+			<div class="storeList">
+				<dl class="displayBox">
+					<dt>
+						<img src="img/mall1.jpg" />
+					</dt>
+					<dd class="boxflex">
+						<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+						<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						<h5 class="mobile">15974447214</h5>
+						<h5 class="clock">8:00-22:00</h5>
+					</dd>
+				</dl>
+				<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+				<span class="gothere">去这里</span>
+			</div>
+			
+		</div>
+		<button id="openStore" class="showLights"></button>
+		<!--  服务详情   温馨提示    -->
+		<div class="prdLight loveTip">
+			<h4>温馨提示</h4>
+			<h5>标题名称华窈整形整形标题名称标题名称华窈整形整形标题</h5>
+		</div>
+	
+		
+	</div>		
+</section>
+	
+<!--  底部  立即购买    -->
+<div class="displayBox buyfootBar">
+	<label class="boxflex">实付：<cite class="red"><i>￥</i>199.85</cite></label>
+	<a href="orderPay.html"><span>立即购买</span></a>
+</div>
+
+<!--  弹层   可选门店列表    -->
+<div id="storePop" class="rightPop">
+	<div class="storeBox">
+		<h3>服务支持门店</h3>
+		<div class="mui-content mui-scroll-wrapper scrollY scrollTp66">
+			<div class="mui-scroll" id="dataScroll">
+				<div class="storeList">
+					<dl class="displayBox">
+						<dt>
+							<img src="img/mall1.jpg" />
+						</dt>
+						<dd class="boxflex">
+							<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+							<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						</dd>
+					</dl>
+					<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+					<span class="gothere">去这里</span>
+				</div>
+				<div class="storeList">
+					<dl class="displayBox">
+						<dt>
+							<img src="img/mall1.jpg" />
+						</dt>
+						<dd class="boxflex">
+							<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+							<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						</dd>
+					</dl>
+					<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+					<span class="gothere">去这里</span>
+				</div>
+				<div class="storeList">
+					<dl class="displayBox">
+						<dt>
+							<img src="img/mall1.jpg" />
+						</dt>
+						<dd class="boxflex">
+							<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+							<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						</dd>
+					</dl>
+					<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+					<span class="gothere">去这里</span>
+				</div>
+				<div class="storeList">
+					<dl class="displayBox">
+						<dt>
+							<img src="img/mall1.jpg" />
+						</dt>
+						<dd class="boxflex">
+							<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+							<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						</dd>
+					</dl>
+					<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+					<span class="gothere">去这里</span>
+				</div>
+				<div class="storeList">
+					<dl class="displayBox">
+						<dt>
+							<img src="img/mall1.jpg" />
+						</dt>
+						<dd class="boxflex">
+							<h4>288元优惠代金券288元优惠代优惠代金券金券..</h4>
+							<h5 class="address">上海市长宁区金钟路199号长宁一号楼303号</h5>
+						</dd>
+					</dl>
+					<label class="callTel" data-tel="tel:18818888888">电话咨询</label>
+					<span class="gothere">去这里</span>
+				</div>
+				<!-- 上拉加载提示    开始-->
+				<div class="loadmore"><span class="loading"></span><span class="loadTip">上拉显示更多</span></div>
+				 <!-- 上拉加载提示     结束-->
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<!--  公共弹层背景    -->
+<div class="rightpopBg hide"></div>
+	
+
+<script type="text/javascript" src="js/public.js" ></script>
+<script type="text/javascript" src="js/productDetails.js" ></script>
+	
+</body>
+</html>

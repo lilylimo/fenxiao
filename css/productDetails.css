@@ -1,0 +1,105 @@
+/*服务详情样式*/
+.prdetail i{font-size: 12px;}
+/*********  服务详情      头部   *********/
+.prdSlide{width: 100%;height: 200px;}
+.prdSlide img{width: 100%;height: 100%;}
+.prdSlide .swiper-pagination-bullet-active{background: #fff;}
+
+.titleBar{padding: 10px;background: #fff;margin-bottom: 10px;}
+.titleBar h2{color: #000;font-size: 16px;width: 86%;margin-bottom: 10px;}
+.titleBar h3{margin-bottom: 5px;}
+.titleBar h3 span{font-size: 16px;}
+.titleBar h3 label{text-align: right;color: #a48f97;}
+.titleBar h4{margin-bottom: 8px;color: #a48f97;}
+
+.memberProfit{background: #fff;padding: 10px;margin-bottom: 10px;}
+.memberProfit h3{border-bottom: 1px solid #eee;line-height: 30px;padding: 0px 3px 5px 3px;}
+.memberProfit h3 span{color: #5b4d52;font-size: 16px;}
+.memberProfit h3 label{text-align: right;font-weight: bold;}
+.memberProfit dl{width: 100%;padding: 5px 0;line-height: 30px;position: relative;}
+.memberProfit dl:after{content: "\e913";position: absolute;bottom: 5px;right: -3px;z-index: 2;font-size: 16px;color: #dbd2d5;font-weight: bold;}
+.memberProfit dl dt{color: #5b4d52;}
+
+/*********  服务详情      商品亮点   *********/
+.prdLight{text-align: center;background: #fff;padding: 20px 10%;color: #a48f97;}
+.prdLight h4{font-size: 16px;margin-bottom: 15px;color: #d65c87;}
+.prdLight h4:before{content: "";width: 20px;height: 2px;background: #d65c87;margin-right: 5px;margin-top: -2px;}
+.prdLight h4:after{content: "";width: 20px;height: 2px;background: #d65c87;margin-left: 5px;margin-top: -2px;}
+.prdLight h5:first-of-type{margin-bottom: 10px;}
+
+.showLights{background: #fff;text-align: center;width: 100%;height: 40px;margin-bottom: 10px;margin-top: 3px;}
+.showLights:before{content: "\e912";font-size: 16px;color: #a48f97;}
+.showLights.cur:before{content: "\e914";}
+
+.uploadBox{background: #fff;min-height: 200px;text-align: center;color: #a48f97;margin-top: 3px;padding: 20px 10px;}
+
+/*********  服务详情      可选服务门店   *********/
+.storeBox{padding: 10px;background: #fff;}
+.storeBox h3{color: #5b4d52;font-size: 16px;border-bottom: 1px solid #eee;padding: 5px 5px 8px 5px;margin-bottom: 20px;}
+
+.storeList{overflow: hidden;margin-bottom: 20px;}
+.storeList dl{border-bottom: 1px solid #eee;padding-bottom: 10px;margin-bottom: 10px;}
+.storeList dl dt{width: 60px;height: 60px;border-radius: 50%;overflow: hidden;border:2px solid #efefef;margin-right: 10px;margin-top: 10px;}
+.storeList dl dt img{width: 100%;height: 100%;}
+.storeList dl dd h4{color: #5b4d52;font-size: 16px;height: 20px;overflow: hidden;margin-bottom: 5px;}
+.storeList dl dd h5{color: #a48f97;height: 20px;overflow: hidden;}
+
+.address:before{content: "\e90f";font-size: 16px;color: #a48f97;margin-right: 5px;margin-top: -2px;}
+.mobile:before{content: "\e910";font-size: 16px;color: #a48f97;margin-right: 5px;margin-top: -2px;}
+.clock:before{content: "\e907";font-size: 14px;color: #a48f97;margin-right: 5px;margin-top: -2px;}
+
+.gothere{width: 90px;height: 30px;line-height: 30px;color: #63b0eb;border: 1px solid #63b0eb;border-radius: 5px;text-align: right;padding: 0 10px;float: right;}
+.gothere:before{content: "\e911";font-size: 18px;float: left;color: #63b0eb;}
+
+.callTel{width: 100px;height: 30px;line-height: 30px;color: #fff;background: #63b0eb;border-radius: 5px;text-align: right;padding: 0 10px;display: inline-block;float: right;margin-left: 20px;}
+.callTel:before{content: "\e910";font-size: 18px;float: left;color: #fff;}
+
+/*********  服务详情      温馨提示   *********/
+.loveTip{margin-bottom: 10px;}
+.loveTip h4{color: #a18c94;}
+.loveTip h4:before,.loveTip h4:after{background: #a18c94;}
+
+
+/*********  服务详情      公共右弹层   *********/
+.rightpopBg{width: 100%;height: 100%;position:fixed;z-index: 5;background: rgba(0,0,0,.6); top: 0px;left: 0px;}
+.rightPop{width: 85%;height: 100%;position: fixed;z-index: 6;top: 0;right:-100%;background: #fff;}
+
+.rightPop .storeBox h3{text-align: center;}
+.rightPop .storeList dl dt{margin-top: 0;}
+.rightPop .storeList h5{margin-top: 10px;}
+.rightPop .storeList dd h4{margin-top: 5px;}
+
+.rightPop .mui-content{width: 90%;margin: 0 5%;}
+
+
+
+/*三星galaxy*/
+@media screen and (min-width:360px){
+	.prdSlide{height: 240px;}
+	.prdLight{padding: 25px 13%;}
+	.storeList dl dt{width: 80px;height: 80px;margin-top: 6px;}
+	.storeList dl dd h4{margin-bottom: 10px;}
+	.storeList dl dd h5{margin-bottom: 5px;}
+	.buyfootBar span{width: 140px;}
+	.rightPop .storeList h5{margin-top: 15px;}
+	.rightPop .storeList dd h4{margin-top: 10px;}
+}
+/*iPhone 6*/
+@media screen and (min-width:375px){
+	.prdSlide{height: 250px;}
+	.prdLight{padding: 25px 14%;}
+	
+}
+/*iPhone 6 Plus*/
+@media screen and (min-width:414px){
+	.prdSlide{height: 280px;}
+	.prdLight{padding: 25px 16%;}
+	.buyfootBar span{width: 160px;}
+}
+
+
+
+
+
+
+

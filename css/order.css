@@ -1,0 +1,53 @@
+/*分销订单页面样式*/
+/*********  分销订单    *********/
+
+.orderHeard{ width: 100%; height: 44px; line-height: 44px; position: fixed; left: 0; top: 0; background: #fff; color: #777;}
+.orderHeard li{ width: 33.33%; float: left; text-align: center; position: relative;}
+.orderHeard li.active{ color:  #eb6393;}
+.orderHeard li.active:before{ content: ""; width: 100%; height: 0; border-bottom: 2px solid #eb6393; position: absolute; left: 0; bottom: 0;}
+
+/*********  分销订单 头部导航   *********/
+.orderList{ padding: 10px;}
+.orderBox{background: #fff;  padding: 10px; margin-bottom: 10px; border-radius: 4px;}
+
+.orderBox{color: #a48f97;overflow: hidden;}
+.orderBox>h3{padding-bottom: 10px;border-bottom: 1px solid #eeeeee;}
+.orderBox>h3 span{height: 16px;overflow: hidden;}
+.orderBox>h3 label{text-align: right;font-size: 15px;}
+.orderBox dl{padding-top: 10px;padding-bottom: 5px;border-bottom: 1px solid #eee;}
+.orderBox dl dt{width: 80px;height: 80px;border-radius: 50%;overflow: hidden;border: 3px solid #efefef;margin-right: 15px;}
+.orderBox dl dt img{width: 100%;height: 100%;}
+.orderBox dl dd{margin-top: 5px;}
+.orderBox dl dd h4{line-height: 30px;}
+.orderBox dl dd h3{font-size: 16px;height: 42px;overflow: hidden;width: 60%;color: #5b4d52;}
+.orderBox dl dd p span{display: block;color: #5b4d52;}
+.orderBox dl dd p label{display: block;text-decoration: line-through;margin-top: 5px;}
+.orderBox dl dd h4 label:before{content: "\e907";color: #5b4d52;font-size: 17px;margin-right: 4px;margin-top: -2px;}
+.orderBox dl dd h5{margin-top: 10px;}
+.orderBox dl dd h5 i{font-size: 12px;}
+.orderBox>span,.orderBox>a{float: right;margin-top: 10px;margin-bottom: 5px;}
+.orderBox>span{border-radius: 5px;padding: 3px 9px;background: #eb6393;color: #fff;margin-left: 20px;}
+.orderBox>a{border: 1px solid #5b4d52;border-radius: 5px;padding: 2px 8px;}
+
+.orderUl li{border-bottom: 10px solid #f8f8f8;}
+
+
+/*三星galaxy*/
+@media screen and (min-width:360px){
+
+}
+/*iPhone 6*/
+@media screen and (min-width:375px){
+		
+}
+/*iPhone 6 Plus*/
+@media screen and (min-width:414px){
+
+}
+
+
+
+
+
+
+
